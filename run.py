@@ -26,9 +26,6 @@ def xsec(target):
 	 fx.close()
      else:
          print("Not Vuln "+u)
-	 fx = open("result.txt", "a")
-         fx.write(u+shell+"\n")
-         fx.close()
    except:
       print('error')
 
