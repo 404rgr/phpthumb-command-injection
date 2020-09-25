@@ -65,7 +65,7 @@ if __name__ == '__main__':
     zeerx7()
     try:
         if len(sys.argv) < 2:
- 	    print("\nUsage : python run.py target.txt\n")
+ 	    print("\nUsage : python2 run.py target.txt\n")
 	else:
 	    main()
     except:
